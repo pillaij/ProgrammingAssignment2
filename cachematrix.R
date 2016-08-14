@@ -48,3 +48,23 @@ cacheSolve <- function(x, ...) {
   m
 		
 }
+
+## Example showing working of the above two functions 
+## > a <- makeCacheMatrix(matrix(1:4, nrow=2, ncol=2))
+## > a$get()
+##      [,1] [,2]
+## [1,]    1    3
+## [2,]    2    4
+## > cacheSolve(a)
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
+## > cacheSolve(a)
+## getting cached inverse
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
+## > 
+
+
+
